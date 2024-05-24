@@ -11,7 +11,7 @@ require($_SERVER['DOCUMENT_ROOT']."/ProjetADB/controllers/logincontroller.php");
     <input type="password" name="password" id="password" required>
     <label class ="golog">Pas encore inscrit ? <a class ="logorsinup" href="inscription.php">Inscrivez-vous</a></label>
     <label class="errormsg"><?php if(isset($errorMsg)){echo $errorMsg;}?></label>
-    <input type="submit" name="btnlogin" id="submitlog" value="Connection">
+    <input type="submit" name="btnlogin" id="submitlog" value="Connexion">
 </div>
 </Form>
 
