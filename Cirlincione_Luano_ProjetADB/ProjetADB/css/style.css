@@ -1,0 +1,316 @@
+:root{
+    --firstfont: 'Helvetica', sans-serif;
+    --secondfont: 'Lucida Console', sans-serif;
+    --backgroundcolor: #3D3B3C;
+    --headercolor: #323031;
+    --maincolor: #7389AE;
+    --secondcolor: #B5BAD0;
+    --thirdcolor: #09BC8A;
+    --fourthcolor: #77569f;
+    --errorcolor:rgb(228, 72, 72);
+}
+body{
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundcolor);
+}
+/* Header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color:var(--headercolor);
+    box-shadow: 0px 5px 10px 5px #00000030;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.nav{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+.btnnav{
+    font-family: var(--firstfont);
+    color: var(--secondcolor);
+    text-decoration: none;
+    padding: 10px;
+}
+.btnnavedit, .btnnavsupp{
+    font-family: var(--firstfont);
+    color: var(--secondcolor);
+    text-decoration: none;
+    padding: 10px;
+}
+.btnnav:hover{
+    cursor: pointer;
+    color: var(--thirdcolor);
+}
+.btnnavedit:hover{
+    cursor: pointer;
+    color: var(--thirdcolor);
+}
+.btnnavsupp:hover{
+    cursor: pointer;
+    color: var(--errorcolor);
+}
+.errormsg{
+    font-family: var(--firstfont);
+    font-size: larger !important;
+    color: var(--errorcolor);
+    margin-top: 10px;
+    margin-left: 15%;
+}
+.formsubscribe{
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    margin-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 450px;
+    height: 565px;
+    background-color: var(--maincolor);
+    border-radius: 45px;
+    box-shadow: 3px 3px 10px 12px #00000030;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.formlogin{
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 450px;
+    height: 405px;
+    background-color: var(--maincolor);
+    border-radius: 45px;
+    box-shadow: 3px 3px 10px 12px #00000030;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+.username{
+    font-family: var(--firstfont);
+    display: block;
+    margin-top: 15%;
+    margin-left: 15%;
+    color: #FFFFFF;
+
+}
+#username,#email{
+    margin-top: 25px;
+    margin-left: 10%;
+    width: 50%;
+    height: 20px;
+    border-radius: 10px;
+    border: inset 3px #92929226;
+    padding-left: 10px;
+}
+#email{
+    width: 65%;
+}
+.password,.passwordI,.email{
+    font-family: var(--firstfont);
+    display: block;
+    margin-top: 20px;
+    margin-left: 15%;
+    color: #FFFFFF;
+}
+
+#password,#password2{
+    margin-top: 25px;
+    margin-left: 10%;
+    width: 50%;
+    height: 20px;
+    border-radius: 10px;
+    border: inset 3px #92929226;
+    padding-left: 10px;
+}
+.labelog{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15%;
+}
+.golog{
+    margin-top: 20px;
+    margin-left: 15%;
+    font-family: var(--firstfont);
+    color: #FFFFFF;
+}
+.logorsinup{
+    text-decoration: none;
+    font-family: var(--firstfont);
+    color: var(--fourthcolor);
+}
+#inscription{
+    background-color: #ffffff00;
+    border: none;
+    margin-top: 20px;
+    margin-left: 15%;
+    font-family: var(--firstfont);
+    color: var(--thirdcolor);
+}
+#inscription:hover{
+    cursor: pointer;
+}
+#submitlog{
+    position: absolute;
+    bottom: 45px;
+    right: 45px;
+    width: 145px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondcolor);
+    color: #FFFFFF;
+    box-shadow: 5px 5px 10px 5px #00000030;
+    font-family: var(--secondfont);
+    font-size: 20px;
+    /*font-weight: bold;
+    */
+}
+#submitlog:hover{
+    cursor: pointer;
+}
+
+/* Thread */
+.main{
+    display: flex;
+    justify-content: center;
+}
+.threads{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    width: 60%;
+    background-color: var(--headercolor);
+    border-radius: 20px;
+}
+.threadcontent ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.threadcontent li{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -65px;
+    margin-right: 50px;
+    padding: 20px;
+    background-color: var(--maincolor);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px #00000030;
+}
+.threadcontent h2{
+    font-family: var(--secondfont);
+    font-size: 20px;
+    color: var(--thirdcolor);
+    margin-top: 10px;
+    
+}
+.threadcontent p{
+    font-family: var(--firstfont);
+    font-size: 15px;
+    color: #131313;
+}
+.thread{
+    border-bottom: rgb(8, 8, 8) solid 1px;
+}
+.formpublish{
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 500px;
+    background-color: var(--maincolor);
+    border-radius: 45px;
+    box-shadow: 3px 3px 10px 12px #00000030;
+    flex-direction: column;
+}
+.titrequestion{
+    font-family: var(--firstfont);
+    display: block;
+    margin-top: 6%;
+    margin-left: 15%;
+    color: #FFFFFF;
+}
+.titredesc,.titrecontenu{ 
+    font-family: var(--firstfont);
+    display: block;
+    margin-top: 5%;
+    margin-left: 15%;
+    color: #FFFFFF;
+}
+.infoquestion{
+    font-family: var(--firstfont);
+    display: flex;
+    margin-left: 2%;
+    color: var(--secondcolor);
+    justify-content: space-between;
+}
+#titrequestion{
+    margin-top: 25px;
+    margin-left: 10%;
+    width: 50%;
+    height: 20px;
+    border-radius: 10px;
+    border: inset 3px #92929226;
+    padding-left: 10px;
+}
+#descquestion{
+    height: 50px;
+}
+#question{
+    height: 100px;
+}
+#descquestion,#question{
+    width: 70%;
+    max-width: 500px;
+    max-height: 150px;
+    border-radius: 10px;
+    border: inset 3px #92929226;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+#btnpublish{
+    position: absolute;
+    bottom: 45px;
+    right: 45px;
+    width: 145px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondcolor);
+    color: #FFFFFF;
+    box-shadow: 5px 5px 10px 5px #00000030;
+    font-family: var(--secondfont);
+    font-size: 20px;
+    /*font-weight: bold;
+    */
+}
+#btnpublish:hover{
+    cursor: pointer;
+}
