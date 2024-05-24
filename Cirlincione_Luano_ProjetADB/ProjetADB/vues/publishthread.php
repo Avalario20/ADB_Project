@@ -1,6 +1,10 @@
 <?php
 include('../entete.php');
 require($_SERVER['DOCUMENT_ROOT']."/ProjetADB/controllers/publishcontroller.php");
+if(!isset($_SESSION['auth'])){
+    header('Location: connexion.php');
+    exit;
+}
 ?>
 <Form action="<?php echo $_SERVER['SCRIPT_NAME']; ?>" method="POST">
 <div class = "formpublish">
