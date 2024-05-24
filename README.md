@@ -1,6 +1,7 @@
 # ADB_Project
 Projet de Forum sur le thème du jeux vidéo
 
+Ouvrir le dossier ProjetADB pour que ça marche  
 
 Identifiant : admin  
 MDP : admin  
